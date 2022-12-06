@@ -1,0 +1,8 @@
+title @s actionbar ["",{"text":"x","obfuscated":true,"color":"#008DFF"},{"text":"[","bold":true,"color":"gray"},{"score":{"name":"@s","objective":"ed_mana"},"bold":true,"color":"aqua"},{"text":"/","bold":true,"color":"gray"},{"score":{"name":"@s","objective":"ed_mana_cap"},"bold":true,"color":"aqua"},{"text":"]","bold":true,"color":"gray"},{"text":"-"},{"text":"[","bold":true,"color":"gray"},{"text":"x","obfuscated":true,"color":"dark_red"},{"text":"-","bold":true,"color":"gray"},{"text":"F","color":"#FF9900"},{"text":"i","color":"#FF8600"},{"text":"r","color":"#FF6B00"},{"text":"eb","color":"#FF4B00"},{"text":"a","color":"#FF6B00"},{"text":"l","color":"#FF8600"},{"text":"l","color":"#FF9900"},{"text":"-","bold":true,"color":"gray"},{"text":"x","obfuscated":true,"color":"dark_red"},{"text":"]","bold":true,"color":"gray"}]
+execute as @s[scores={Wand=1..}] at @s run summon armor_stand ^ ^1 ^2 {Tags:["ed_ray","ed_fireball"],Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Small:1b}
+execute at @s[scores={Wand=1..}] run execute as @e[tag=ed_fireball,limit=1,sort=nearest] at @p run tp @s ^ ^1 ^1 ~ ~
+execute as @s[scores={Wand=1..}] at @s run particle minecraft:flame ^ ^1 ^2 0.1 0.1 0.1 0.1 20
+execute as @s[scores={Wand=1..}] at @s run particle minecraft:lava ^ ^1 ^2 0.1 0.1 0.1 0.1 10
+execute as @s[scores={Wand=1..}] at @s run playsound minecraft:block.fire.extinguish master @a[distance=0..10] ~ ~ ~ 1 1
+execute as @s[scores={Wand=1..}] run scoreboard players remove @s ed_mana 5
+execute as @s[scores={Wand=1..}] run scoreboard players reset @s Wand

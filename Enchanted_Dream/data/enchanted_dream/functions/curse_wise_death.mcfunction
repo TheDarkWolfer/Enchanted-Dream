@@ -1,0 +1,5 @@
+summon minecraft:armor_stand ~ ~-1 ~ {Tags:["ed_curse_wise_item","ed_holder","ed_spin"],Invisible:1b,Invulnerable:1b,NoGravity:1b}
+item replace entity @e[tag=ed_curse_wise_item,distance=0..1,limit=1,sort=nearest] armor.head with minecraft:warped_fungus_on_a_stick{Unbreakable:1,HideFlags:4,display:{Name:'[{"text":"S","bold":true,"color":"#9900ff"},{"text":"o","color":"#9933ff"},{"text":"u","color":"#9966ff"},{"text":"l ","color":"#9966cc"},{"text":"s","color":"#9999ff"},{"text":"h","color":"#9966cc"},{"text":"a","color":"#9966ff"},{"text":"r","color":"#9933ff"},{"text":"d"}]',Lore:['[{"text":"A piece of knowledge left by a cursed human upon their death."}]']},CustomModelData:2}
+execute at @e[tag=ed_curse_wise_item,distance=0..1,limit=1,sort=nearest] run summon lightning_bolt ~ ~ ~
+particle minecraft:dust 0.75 0 0 1 ~ ~ ~ 0.5 50 0.5 0 500 normal
+playsound minecraft:entity.elder_guardian.curse ambient @a[distance=0..50]

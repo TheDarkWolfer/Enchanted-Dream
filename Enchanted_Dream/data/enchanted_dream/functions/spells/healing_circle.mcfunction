@@ -1,0 +1,9 @@
+title @s actionbar ["",{"text":"x","obfuscated":true,"color":"#00B4FF"},{"text":"[","bold":true,"color":"gray"},{"score":{"name":"@s","objective":"ed_mana"},"bold":true,"color":"aqua"},{"text":"/","bold":true,"color":"gray"},{"score":{"name":"@s","objective":"ed_mana_cap"},"bold":true,"color":"aqua"},{"text":"]","bold":true,"color":"gray"},{"text":"-"},{"text":"[","bold":true,"color":"gray"},{"text":"x","obfuscated":true,"color":"green"},{"text":"-","color":"gray"},{"text":"H","color":"#00C403"},{"text":"e","color":"#00D703"},{"text":"a","color":"#00e304"},{"text":"l","color":"#00F304"},{"text":"i","color":"#00FF04"},{"text":"n","color":"green"},{"text":"g c","color":"#76FF4E"},{"text":"i","color":"#00FF04"},{"text":"r","color":"#00F304"},{"text":"c","color":"#00e304"},{"text":"l","color":"#00D703"},{"text":"e","color":"#00C403"},{"text":"-","color":"gray"},{"text":"x","obfuscated":true,"color":"green"},{"text":"]","bold":true,"color":"gray"}]
+execute as @s[scores={Wand=1..}] run scoreboard players remove @s ed_mana 5
+execute as @s[scores={Wand=1..}] run execute at @s run particle minecraft:totem_of_undying ~ ~1 ~ 0.25 0.5 0.25 0.1 25 normal
+execute as @s[scores={Wand=1..}] run execute at @s run particle minecraft:happy_villager ~ ~1 ~ 0.25 0.5 0.25 0.1 25 normal
+execute as @s[scores={Wand=1..}] run execute at @s run summon armor_stand ~ ~ ~ {noGravity:1b,Marker:1b,Invisible:1,Tags:["ed_spin","ed_healing_circle"],Small:1b}
+execute as @s[scores={Wand=1..}] run execute at @s run item replace entity @e[tag=ed_healing_circle,distance=0..1,limit=1,sort=nearest] armor.head with minecraft:carrot_on_a_stick{CustomModelData:5}
+execute as @s[scores={Wand=1..}] run scoreboard players reset @s Wand
+execute as @s[scores={Wand=1..}] run scoreboard players set @e[tag=ed_healing_circle] ed_tick 0
+execute as @s[scores={Wand=1..}] run scoreboard players set @e[tag=ed_healing_circle] ed_lifetime 0

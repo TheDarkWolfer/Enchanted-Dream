@@ -1,0 +1,13 @@
+execute at @e[tag=ed_healing_circle] run particle minecraft:totem_of_undying ^ ^ ^5 0.1 0.1 0.1 0.1 10 normal
+execute at @e[tag=ed_healing_circle] run particle minecraft:totem_of_undying ^ ^ ^-5 0.1 0.1 0.1 0.1 10 normal
+execute at @e[tag=ed_healing_circle] run particle minecraft:totem_of_undying ^-5 ^ ^ 0.1 0.1 0.1 0.1 10 normal
+execute at @e[tag=ed_healing_circle] run particle minecraft:totem_of_undying ^5 ^ ^ 0.1 0.1 0.1 0.1 10 normal
+execute at @e[tag=ed_healing_circle] run particle minecraft:dust 0 1 0 1 ~ ~ ~ 2.5 0.1 2.5 0.1 10 normal
+execute at @e[tag=ed_forcefield] run particle minecraft:enchant ^ ^3 ^5 0.1 1 0.1 0.01 10 normal
+execute at @e[tag=ed_forcefield] run particle minecraft:enchant ^ ^3 ^-5 0.1 1 0.1 0.01 10 normal
+execute at @e[tag=ed_forcefield] run particle minecraft:enchant ^-5 ^3 ^ 0.1 1 0.1 0.01 10 normal
+execute at @e[tag=ed_forcefield] run particle minecraft:enchant ^5 ^3 ^ 0.1 1 0.1 0.01 10 normal
+execute at @e[tag=ed_forcefield] run particle minecraft:dust 1 1 1 1 ^ ^3 ^5 0.1 1 0.1 0.1 5 normal
+execute at @e[tag=ed_forcefield] run particle minecraft:dust 1 1 1 1 ^ ^3 ^-5 0.1 1 0.1 0.1 5 normal
+execute at @e[tag=ed_forcefield] run particle minecraft:dust 1 1 1 1 ^-5 ^3 ^ 0.1 1 0.1 0.1 5 normal
+execute at @e[tag=ed_forcefield] run particle minecraft:dust 1 1 1 1 ^5 ^3 ^ 0.1 1 0.1 0.1 5 normal

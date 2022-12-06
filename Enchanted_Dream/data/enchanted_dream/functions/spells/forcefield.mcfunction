@@ -1,0 +1,8 @@
+title @s actionbar ["",{"text":"x","obfuscated":true,"color":"#00B4FF"},{"text":"[","bold":true,"color":"gray"},{"score":{"name":"@s","objective":"ed_mana"},"bold":true,"color":"aqua"},{"text":"/","bold":true,"color":"gray"},{"score":{"name":"@s","objective":"ed_mana_cap"},"bold":true,"color":"aqua"},{"text":"]","bold":true,"color":"gray"},{"text":"-"},{"text":"[","bold":true,"color":"gray"},{"text":"x","obfuscated":true,"color":"green"},{"text":"-","color":"gray"},{"text":"F","color":"#00C01C"},{"text":"o","color":"#00D819"},{"text":"r","color":"#00DF15"},{"text":"c","color":"#00EE16"},{"text":"ef","color":"#00F817"},{"text":"i","color":"#00EE16"},{"text":"e","color":"#00DF15"},{"text":"l","color":"#00D819"},{"text":"d","color":"#00C01C"},{"text":"-","color":"gray"},{"text":"x","obfuscated":true,"color":"green"},{"text":"]","bold":true,"color":"gray"}]
+execute as @s[scores={Wand=1..}] run scoreboard players remove @s ed_mana 5
+execute as @s[scores={Wand=1..}] run execute at @s run particle minecraft:electric_spark ~ ~1 ~ 0.25 0.5 0.25 0.05 25 normal
+execute as @s[scores={Wand=1..}] run execute at @s run particle minecraft:dragon_breath ~ ~1 ~ 0.25 0.5 0.25 0.01 25 normal
+execute as @s[scores={Wand=1..}] run execute at @s run summon armor_stand ~ ~ ~ {noGravity:1b,Marker:1b,Invisible:1,Tags:["ed_spin","ed_forcefield"]}
+execute as @s[scores={Wand=1..}] run scoreboard players reset @s Wand
+execute as @s[scores={Wand=1..}] run scoreboard players set @e[tag=ed_forcefield] ed_tick 0
+execute as @s[scores={Wand=1..}] run scoreboard players set @e[tag=ed_forcefield] ed_lifetime 0
