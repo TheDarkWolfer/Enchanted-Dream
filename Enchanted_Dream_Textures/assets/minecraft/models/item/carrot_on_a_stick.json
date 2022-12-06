@@ -1,0 +1,14 @@
+{
+    "parent":"item/handheld",
+    "textures":{
+        "layer0":"item/carrot_on_a_stick"
+    },
+    "overrides":[
+        {"predicate":{"custom_model_data":1},"model":"item/staff_of_stuff"},
+        {"predicate":{"custom_model_data":2},"model":"item/catalyst"},
+        {"predicate":{"custom_model_data":3},"model":"item/pride_flag"},
+        {"predicate":{"custom_model_data":4},"model":"item/enby_flag"},
+        {"predicate":{"custom_model_data":5},"model":"item/healing_blossom"},
+        {"predicate":{"custom_model_data":999},"model":"item/camille_s_hand"}
+    ]
+}
