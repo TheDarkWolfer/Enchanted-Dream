@@ -1,12 +1,3 @@
-execute as @a[tag=!ed_red_chain,nbt={SelectedItemSlot:8,Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:-106b,tag:{Catalyst:1b}}]}] run function enchanted_dream:spells/healing_circle
-execute as @a[tag=!ed_red_chain,nbt={SelectedItemSlot:7,Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:-106b,tag:{Catalyst:1b}}]}] run function enchanted_dream:spells/forcefield
-execute as @a[tag=!ed_red_chain,nbt={SelectedItemSlot:6,Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:-106b,tag:{Catalyst:1b}}]}] run function enchanted_dream:spells/adaptation
-execute as @a[tag=!ed_red_chain,nbt={SelectedItemSlot:5,Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:-106b,tag:{Catalyst:1b}}]}] run function enchanted_dream:spells/far_step
-execute as @a[tag=!ed_red_chain,nbt={SelectedItemSlot:4,Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:-106b,tag:{Catalyst:1b}}]}] run function enchanted_dream:spells/ritual_check
-execute as @a[tag=!ed_red_chain,nbt={SelectedItemSlot:3,Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:-106b,tag:{Catalyst:1b}}]}] run function enchanted_dream:spells/gravity_shift
-execute as @a[tag=!ed_red_chain,nbt={SelectedItemSlot:2,Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:-106b,tag:{Catalyst:1b}}]}] run function enchanted_dream:spells/fireball
-execute as @a[tag=!ed_red_chain,nbt={SelectedItemSlot:1,Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:-106b,tag:{Catalyst:1b}}]}] run function enchanted_dream:spells/freeze_breath
-execute as @a[tag=!ed_red_chain,nbt={SelectedItemSlot:0,Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:-106b,tag:{Catalyst:1b}}]}] run function enchanted_dream:spells/amethyst_call
 execute as @a[tag=!ed_red_chain,nbt={Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:-106b,tag:{CustomModelData:999}}]}] run scoreboard players set @s ed_level 0
 execute as @e[tag=ed_holder,type=armor_stand] unless data entity @s ArmorItems[].id unless data entity @s HandItems[].id run kill @s
 execute as @e[tag=ed_spin] at @s run tp @s ~ ~ ~ ~5 ~
@@ -28,6 +19,8 @@ function enchanted_dream:spells_effects
 function enchanted_dream:mana_management
 function enchanted_dream:curse_effects
 function enchanted_dream:consumables/consumables_main
+function enchanted_dream:crafting/runic_dagger
+function enchanted_dream:spell_selection
 scoreboard players set @a Wand 0
 execute as @a[tag=curse_wise,scores={ed_death=1..}] run tag @s remove curse_wise
 execute as @a[tag=ed_red_chain,scores={ed_death=1..}] run tag @s remove ed_red_chain

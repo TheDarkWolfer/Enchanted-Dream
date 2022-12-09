@@ -1,0 +1,8 @@
+title @s actionbar ["",{"text":"x","obfuscated":true,"color":"#009AFF"},{"text":"[","bold":true,"color":"gray"},{"score":{"name":"@s","objective":"ed_mana"},"bold":true,"color":"aqua"},{"text":"/","bold":true},{"score":{"name":"@s","objective":"ed_mana_cap"},"bold":true,"color":"aqua"},{"text":"]","bold":true,"color":"gray"},{"text":"-"},{"text":"[","bold":true,"color":"gray"},{"text":"x","obfuscated":true,"color":"dark_blue"},{"text":"-","bold":true,"color":"gray"},{"text":"T","color":"#000BFF"},{"text":"h","color":"#1D26FF"},{"text":"u","color":"#3B58FF"},{"text":"n","color":"#528EFF"},{"text":"d","color":"#80DDFF"},{"text":"er","color":"#96F1FF"},{"text":"s","color":"#80DDFF"},{"text":"t","color":"#528EFF"},{"text":"o","color":"#3B58FF"},{"text":"r","color":"#1D26FF"},{"text":"m","color":"#000BFF"},{"text":"-","bold":true,"color":"gray"},{"text":"x","obfuscated":true,"color":"dark_blue"},{"text":"]","bold":true,"color":"gray"}]
+execute as @s[scores={Wand=1..}] at @s run particle minecraft:electric_spark ~ ~0.5 ~ 2.5 0 2.5 0.1 50
+execute as @s[scores={Wand=1..}] at @s run particle minecraft:bubble ~ ~0.5 ~ 2.5 0 2.5 0.1 50
+execute as @s[scores={Wand=1..}] at @s run particle minecraft:dust 0 0 1 1 ~ ~0.5 ~ 2.5 0 2.5 0.1 50
+execute as @s[scores={Wand=1..}] at @s run execute at @e[distance=2..10] run summon minecraft:lightning_bolt ~ ~ ~
+execute at @s[scores={Wand=1..}] run playsound minecraft:entity.elder_guardian.curse ambient @a[distance=0..10]
+execute as @s[scores={Wand=1..}] run scoreboard players remove @s ed_mana 20
+execute as @s[scores={Wand=1..}] run scoreboard players reset @s Wand

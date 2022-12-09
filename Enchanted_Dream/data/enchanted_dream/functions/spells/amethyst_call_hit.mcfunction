@@ -1,5 +1,7 @@
 kill @e[tag=ed_amethyst_call,distance=..1,limit=1,sort=nearest]
 execute at @s run tag @e[tag=!ed_amethyst_call,distance=0..1,limit=1,sort=nearest] add ed_amethyst_trigger
+execute as @e[tag=ed_amethyst_trigger] run scoreboard players set @s ed_amethyst_time 0
+execute as @e[tag=ed_amethyst_trigger] run scoreboard players set @s ed_sneak 0
 execute at @s run execute at @e[tag=ed_amethyst_trigger,distance=0..1,limit=1,sort=nearest] run playsound minecraft:entity.zombie_villager.cure ambient @a[distance=..10]
 execute at @s run particle block minecraft:magenta_stained_glass ~ ~1 ~ 0 0 0 0.1 10 normal
 execute at @s run particle minecraft:portal ~ ~1 ~ 0.5 0.5 0.5 0.5 10 normal

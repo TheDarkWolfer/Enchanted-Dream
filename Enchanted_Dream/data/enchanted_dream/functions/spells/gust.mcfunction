@@ -1,0 +1,7 @@
+title @s actionbar ["",{"text":"x","obfuscated":true,"color":"#009AFF"},{"text":"[","bold":true,"color":"gray"},{"score":{"name":"@s","objective":"ed_mana"},"bold":true,"color":"aqua"},{"text":"/","bold":true},{"score":{"name":"@s","objective":"ed_mana_cap"},"bold":true,"color":"aqua"},{"text":"]","bold":true,"color":"gray"},{"text":"-"},{"text":"[","bold":true,"color":"gray"},{"text":"x","obfuscated":true,"color":"aqua"},{"text":"-","bold":true,"color":"gray"},{"text":"G","color":"white"},{"text":"u","color":"#EFEFEF"},{"text":"s","color":"#E3E3E3"},{"text":"t","color":"#DEDEDE"},{"text":"-","bold":true,"color":"gray"},{"text":"x","obfuscated":true,"color":"aqua"},{"text":"]","bold":true,"color":"gray"}]
+execute at @s[scores={Wand=1..}] positioned ^ ^1 ^2.5 run particle minecraft:cloud ~ ~0.5 ~ 0.1 0.1 0.1 0.1 10 force
+execute at @s[scores={Wand=1..}] positioned ^ ^1 ^2.5 run effect give @e[distance=..1] minecraft:levitation 1 5 true
+execute at @s[scores={Wand=1..}] positioned ^ ^1 ^2.5 run scoreboard players set @e[distance=..1] ed_mana 0
+execute at @s[scores={Wand=1..}] positioned ^ ^1 ^2.5 run execute as @e[distance=..1] run playsound minecraft:entity.player.attack.knockback ambient @a[distance=0..10]
+execute as @s[scores={Wand=1..}] run scoreboard players remove @s ed_mana 5
+execute as @s[scores={Wand=1..}] at @s[scores={Wand=1..}] run scoreboard players reset @s Wand

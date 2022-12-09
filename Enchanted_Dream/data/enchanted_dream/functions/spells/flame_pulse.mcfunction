@@ -1,0 +1,7 @@
+title @s actionbar ["",{"text":"x","obfuscated":true,"color":"#009AFF"},{"text":"[","bold":true,"color":"gray"},{"score":{"name":"@s","objective":"ed_mana"},"bold":true,"color":"aqua"},{"text":"/","bold":true},{"score":{"name":"@s","objective":"ed_mana_cap"},"bold":true,"color":"aqua"},{"text":"]","bold":true,"color":"gray"},{"text":"-"},{"text":"[","bold":true,"color":"gray"},{"text":"x","obfuscated":true,"color":"dark_red"},{"text":"-","bold":true,"color":"gray"},{"text":"F","color":"gold"},{"text":"l","color":"#FF9F00"},{"text":"a","color":"#FF9900"},{"text":"m","color":"#FF6B00"},{"text":"e P","color":"#FF5800"},{"text":"u","color":"#FF6B00"},{"text":"l","color":"#FF9900"},{"text":"s","color":"#FF9F00"},{"text":"e","color":"gold"},{"text":"-","bold":true,"color":"gray"},{"text":"x","obfuscated":true,"color":"dark_red"},{"text":"]","bold":true,"color":"gray"}]
+execute as @s[scores={Wand=1..}] at @s run scoreboard players set @e[distance=1..10] ed_cursed_flame 50
+execute as @s[scores={Wand=1..}] at @s run particle minecraft:flame ~ ~1 ~ 0.25 0.25 0.25 0.01 20
+execute as @s[scores={Wand=1..}] at @s run particle minecraft:lava ~ ~1 ~ 0.25 0.25 0.25 0.01 10
+execute as @s[scores={Wand=1..}] at @s run playsound minecraft:block.fire.extinguish master @a[distance=0..10] ~ ~ ~ 1 1
+execute as @s[scores={Wand=1..}] run scoreboard players remove @s ed_mana 5
+execute as @s[scores={Wand=1..}] run scoreboard players reset @s Wand

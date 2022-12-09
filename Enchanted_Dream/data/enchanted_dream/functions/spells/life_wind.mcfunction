@@ -1,0 +1,7 @@
+title @s actionbar ["",{"text":"x","obfuscated":true,"color":"#009AFF"},{"text":"[","bold":true,"color":"gray"},{"score":{"name":"@s","objective":"ed_mana"},"bold":true,"color":"aqua"},{"text":"/","bold":true},{"score":{"name":"@s","objective":"ed_mana_cap"},"bold":true,"color":"aqua"},{"text":"]","bold":true,"color":"gray"},{"text":"-"},{"text":"[","bold":true,"color":"gray"},{"text":"x","obfuscated":true,"color":"aqua"},{"text":"-","bold":true,"color":"gray"},{"text":"L","color":"white"},{"text":"i","color":"#F3F3F3"},{"text":"f","color":"#ECECEC"},{"text":"e W","color":"#E0E0E0"},{"text":"i","color":"#ECECEC"},{"text":"n","color":"#F3F3F3"},{"text":"d","color":"white"},{"text":"-","bold":true,"color":"gray"},{"text":"x","obfuscated":true,"color":"aqua"},{"text":"]","bold":true,"color":"gray"}]
+execute as @s[scores={Wand=1..}] at @s run effect give @e[distance=..3] instant_health 1 1 true
+execute as @s[scores={Wand=1..}] at @s run particle minecraft:cloud ~ ~0.5 ~ 0.5 0 0.5 0 20 normal
+execute as @s[scores={Wand=1..}] at @s run particle minecraft:happy_villager ~ ~0.5 ~ 1 0 1 0 5 normal
+execute as @s[scores={Wand=1..}] run playsound minecraft:entity.evoker.cast_spell action @a[distance=0..10]
+execute as @s[scores={Wand=1..}] run scoreboard players remove @s ed_mana 2
+execute as @s[scores={Wand=1..}] run scoreboard players reset @s Wand
