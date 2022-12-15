@@ -18,7 +18,7 @@ Here is a table describing all recipes that are made using either an anvil or a 
 
 here are the things I plan on adding (separated in categories) - These will come at their own pace, because *some* of them I know will be an absolute pain in the backside to make work. This list is ***extremely*** prone to change.
 
-![To-Do list](https://github.com/TheDarkWolfer/Enchanted-Dream/blob/main/Trello_List.PNG)
+![To-Do list](https://github.com/TheDarkWolfer/Enchanted-Dream/blob/main/Trello_List.png)
 
 
 
