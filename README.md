@@ -16,6 +16,9 @@ I accept donations in coffee, money, or pretty knives ^o^
 Here is a table describing all recipes that are made using either an anvil or a smithing table (depending on the recipe)
 ![Smithing Table Recipes](https://github.com/TheDarkWolfer/Enchanted-Dream/blob/main/Recipes.PNG)
 
+here are the things I plan on adding (separated in categories) - These will come at their own pace, because *some* of them I know will be an absolute pain in the backside to make work. This list is ***extremely*** prone to change.
+
+![To-Do list](https://github.com/TheDarkWolfer/Enchanted-Dream/blob/main/Trello_List.PNG)
 
 
 
