@@ -18,6 +18,6 @@ execute at @s[scores={Wand=1..,ed_earthquake_cd=..1}] run spreadplayers ~ ~ 1 10
 execute at @e[tag=ed_earthquake,distance=0..50] run playsound minecraft:entity.generic.explode master @a[distance=0..50]
 execute at @e[tag=ed_earthquake,distance=0..50] run fill ~10 ~-5 ~10 ~-10 ~5 ~-10 minecraft:dirt replace minecraft:grass_block
 execute at @e[tag=ed_earthquake,distance=0..50] run effect give @e[tag=!ed_earthquake,distance=0..10] minecraft:instant_damage 1 0 true
-execute as @e[tag=ed_earthquake,distance=0..50] run kill @s
+execute as @e[tag=ed_earthquake] run kill @s
 execute at @s[scores={Wand=1..,ed_earthquake_cd=..1}] run scoreboard players set @s ed_earthquake_cd 500
 execute as @s[scores={Wand=1..,ed_earthquake_cd=..1}] run scoreboard players reset @s Wand

@@ -1,0 +1,13 @@
+function enchanted_dream:crafting/earth_rune
+function enchanted_dream:crafting/fire_rune
+function enchanted_dream:crafting/water_rune
+function enchanted_dream:crafting/air_rune
+function enchanted_dream:crafting/light_rune
+function enchanted_dream:crafting/dark_rune
+function enchanted_dream:crafting/geologist_rune
+function enchanted_dream:crafting/shimmerrock
+function enchanted_dream:crafting/jester_rune
+function enchanted_dream:crafting/runner_rune
+function enchanted_dream:crafting/healer_rune
+function enchanted_dream:crafting/adventurer_rune
+function enchanted_dream:crafting/scholar_rune

@@ -1,0 +1,16 @@
+scoreboard players set @a[tag=!ed_initiated_player] ed_amethyst_time 0
+scoreboard players set @a[tag=!ed_initiated_player] ed_death 0
+scoreboard players set @a[tag=!ed_initiated_player] ed_consumable 0
+scoreboard players set @a[tag=!ed_initiated_player] ed_cursed_flame 0
+scoreboard players set @a[tag=!ed_initiated_player] ed_earthquake_cd 0
+scoreboard players set @a[tag=!ed_initiated_player] ed_experience 0
+scoreboard players set @a[tag=!ed_initiated_player] ed_experience_cap 0
+scoreboard players set @a[tag=!ed_initiated_player] ed_increment 1
+scoreboard players set @a[tag=!ed_initiated_player] ed_life_steal_time 0
+scoreboard players set @a[tag=!ed_initiated_player] ed_mana 0
+scoreboard players set @a[tag=!ed_initiated_player] ed_mana_cap 0
+scoreboard players set @a[tag=!ed_initiated_player] ed_mana_tick 0
+scoreboard players set @a[tag=!ed_initiated_player] ed_tick 0
+scoreboard players set @a[tag=!ed_initiated_player] ed_sneak 0
+scoreboard players set @a[tag=!ed_initiated_player] ed_level 1
+tag @a[tag=!ed_initiated_player] add ed_initiated_player
