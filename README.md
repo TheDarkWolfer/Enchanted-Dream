@@ -13,7 +13,7 @@ If you encounter any issues while playing with the datapack, feel free to tell m
 I accept donations in coffee, money, or pretty knives ^o^
 
 
-
+Here is a table describing all recipes that are made using either an anvil or a smithing table (depending on the recipe)
 ![Smithing Table Recipes](https://github.com/TheDarkWolfer/Enchanted-Dream/blob/main/Recipes.PNG)
 
 
