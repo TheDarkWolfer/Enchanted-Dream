@@ -20,6 +20,7 @@ here are the things I plan on adding (separated in categories) - These will come
 
 ![To-Do list](https://github.com/TheDarkWolfer/Enchanted-Dream/blob/main/Trello_List.png)
 
+Also, try to fuck me over this repo and I'll come after you with full intent to chew all of your family photos up.
 
 
 
