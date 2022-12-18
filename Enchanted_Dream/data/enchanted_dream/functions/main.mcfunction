@@ -39,3 +39,8 @@ scoreboard players set @a Wand 0
 execute as @a[tag=curse_wise,scores={ed_death=1..}] run tag @s remove curse_wise
 execute as @a[tag=ed_red_chain,scores={ed_death=1..}] run tag @s remove ed_red_chain
 execute as @a[scores={ed_death=1..}] run scoreboard players set @s ed_death 0
+execute as @a[nbt={Inventory:[{Slot:103b,id:"minecraft:golden_hoe",tag:{Two_Faced_Mask:1b}}]}] run team join ed_hide @s
+execute as @a[team=ed_hide,nbt=!{Inventory:[{Slot:103b,id:"minecraft:golden_hoe",tag:{Two_Faced_Mask:1b}}]}] run team leave @s
+execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Catalyst:1b}}]}] run tag @s add ed_has_staff
+execute as @a[nbt=!{Inventory:[{Slot:-106b,tag:{Catalyst:1b}}]}] run tag @s remove ed_has_staff
+title @s[tag=!ed_has_staff,nbt={Inventory:[{Slot:103b,id:"minecraft:golden_hoe",tag:{Mage_Hat:1b}}]}] actionbar ["",{"text":"x","bold":true,"obfuscated":true,"color":"#009AFF"},{"text":"[","bold":true},{"score":{"name":"@s","objective":"ed_mana"},"bold":true,"color":"aqua"},{"text":"/","bold":true},{"score":{"name":"@s","objective":"ed_mana_cap"},"bold":true,"color":"aqua"},{"text":"]","bold":true},{"text":"-","bold":true,"color":"gray"},{"text":"[","bold":true},{"score":{"name":"@s","objective":"ed_experience"},"bold":true,"color":"gold"},{"text":"Exp","color":"dark_gray"},{"text":"/","bold":true},{"score":{"name":"@s","objective":"ed_experience_cap"},"bold":true,"color":"gold"},{"text":"Exp","color":"dark_gray"},{"text":"]","bold":true},{"text":"-","bold":true,"color":"gray"},{"text":"[","bold":true},{"score":{"name":"@s","objective":"ed_level"},"bold":true,"color":"aqua"},{"text":"]","bold":true}]

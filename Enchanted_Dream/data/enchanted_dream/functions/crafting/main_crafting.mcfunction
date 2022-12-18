@@ -11,3 +11,7 @@ function enchanted_dream:crafting/runner_rune
 function enchanted_dream:crafting/healer_rune
 function enchanted_dream:crafting/adventurer_rune
 function enchanted_dream:crafting/scholar_rune
+function enchanted_dream:crafting/two_face_mask
+function enchanted_dream:crafting/witchy_hat_crafting
+function enchanted_dream:crafting/lvl1_adaptation_amulet
+function enchanted_dream:crafting/lvl2_adaptation_amulet

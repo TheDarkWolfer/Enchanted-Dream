@@ -1,0 +1,5 @@
+scoreboard players set @s[scores={ed_mana_tick=..15}] ed_mana_tick 15
+execute at @s[nbt={ActiveEffects:[{Id:19}]}] run particle minecraft:dust 0 0.5 0 1 ~ ~1 ~ 0.25 0.5 0.25 0.5 25 normal
+effect give @s[nbt={ActiveEffects:[{Id:19}]}] minecraft:regeneration 5 0
+effect clear @s[nbt={ActiveEffects:[{Id:19}]}] minecraft:poison
+title @s[tag=!ed_has_staff] actionbar ["",{"text":"x","bold":true,"obfuscated":true,"color":"#009AFF"},{"text":"[","bold":true},{"score":{"name":"@s","objective":"ed_mana"},"bold":true,"color":"aqua"},{"text":"/","bold":true},{"score":{"name":"@s","objective":"ed_mana_cap"},"bold":true,"color":"aqua"},{"text":"]","bold":true},{"text":"-","bold":true,"color":"gray"},{"text":"[","bold":true},{"score":{"name":"@s","objective":"ed_experience"},"bold":true,"color":"gold"},{"text":"Exp","color":"dark_gray"},{"text":"/","bold":true},{"score":{"name":"@s","objective":"ed_experience_cap"},"bold":true,"color":"gold"},{"text":"Exp","color":"dark_gray"},{"text":"]","bold":true},{"text":"-","bold":true,"color":"gray"},{"text":"[","bold":true},{"score":{"name":"@s","objective":"ed_level"},"bold":true,"color":"aqua"},{"text":"]","bold":true}]
