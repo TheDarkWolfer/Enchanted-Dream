@@ -10,7 +10,8 @@ If you wish to become an Alpha-Tester of the datapack, please feel free to conta
 
 If you encounter any issues while playing with the datapack, feel free to tell me through GitHub, and I'll try to fix them (although don't expect it to be instantaneous, life's been pretty tough these days, and that's a fucking euphemism and a half). I plan on adding more things to the datapack as time goes on, like a ton of new spells, runes, mechanics and extra bells and whistles.
 
-
+If you want to participate, here's a patreon I set up :
+[Patreon](https://patreon.com/user?u=84520605&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link)
 
 I accept donations in coffee, money, or pretty knives ^o^
 
