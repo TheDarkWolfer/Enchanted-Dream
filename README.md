@@ -1,7 +1,7 @@
 # Enchanted-Dream
 A datapack I'm developping, which adds a ton of magic to the game
 
-# Planned release date : December 25<sup>th</sup> 2022
+###### Planned release date : December 25<sup>th</sup> 2022
 
 Currently in Alpha 1.0, with new spells, mechanics and staffs
 
@@ -19,10 +19,12 @@ I accept donations in coffee, money, or pretty knives ^o^
 
 
 Here is a table describing all recipes that are made using either an anvil or a smithing table (depending on the recipe)
+<sup>this recipe is probably outdated, but just know that there are tutorials on how to craft basically everything in-game</sup>
 ![Smithing Table Recipes](https://github.com/TheDarkWolfer/Enchanted-Dream/blob/main/Recipe.PNG)
 
 here are the things I plan on adding (separated in categories) - These will come at their own pace, because *some* of them I know will be an absolute pain in the backside to make work. This list is ***extremely*** prone to change.
 
+So, umm, this to-do list is outdated, but I'll leave it there as a souvenir...
 ![To-Do list](https://github.com/TheDarkWolfer/Enchanted-Dream/blob/main/Trello_List.png)
 
 Also, try to fuck me over this repo and I'll come after you with full intent to chew all of your family photos up.
