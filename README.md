@@ -1,10 +1,12 @@
 # Enchanted-Dream
 A datapack I'm developping, which adds a ton of magic to the game
 
+Planned release date : December 25<sup>th</sup> 2022
+
 Currently in Alpha 1.0, with new spells, mechanics and staffs
 
 
-To use it, download the "Enchanted Dream" folder, and put it in your world's datapack folder : once you load your world, type "function enchanted_dream:init" and that'll be it ! To use the datapack to it's fullest, install the resourcepack (Enchanted_Dream_Textures.zip) and load it from the resourcepack menu, and you'll have the texture & 3D models I carefully made for this datapack :D
+To use it, download the "Enchanted Dream" ~~folder~~ archive, and put it in your world's datapack folder : once you load your world, type "function enchanted_dream:init" and that'll be it ! To use the datapack to it's fullest, install the resourcepack (Enchanted_Dream_Textures.zip) and load it from the resourcepack menu, and you'll have the texture & 3D models I carefully made for this datapack :D
 
 If you wish to become an Alpha-Tester of the datapack, please feel free to contact me, I'll be the judge of wether or not to let you in.
 
