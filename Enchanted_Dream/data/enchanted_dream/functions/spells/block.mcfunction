@@ -1,6 +1,0 @@
-title @s actionbar ["",{"text":"x","obfuscated":true,"color":"#0091FA"},{"text":"[","bold":true,"color":"gray"},{"score":{"name":"@s","objective":"ed_mana"},"bold":true,"color":"aqua"},{"text":"/","bold":true},{"score":{"name":"@s","objective":"ed_mana_cap"},"bold":true,"color":"aqua"},{"text":"]","bold":true,"color":"gray"},{"text":"-"},{"text":"[","bold":true,"color":"gray"},{"text":"x","obfuscated":true,"color":"#A00002"},{"text":"-","bold":true,"color":"gray"},{"text":"B","color":"#C00002"},{"text":"l","color":"#AA0002"},{"text":"o","color":"#840002"},{"text":"c","color":"#AA0002"},{"text":"k","color":"#C00002"},{"text":"-","bold":true,"color":"gray"},{"text":"x","obfuscated":true,"color":"#A00002"},{"text":"]","bold":true,"color":"gray"}]
-execute at @s[scores={Wand=1..}] run summon minecraft:armor_stand ^ ^0.5 ^1 {Glowing:0,NoGravity:1b,Invisible:1b,Invulnerable:1b,Tags:["ed_block"]}
-execute at @s[scores={Wand=1..}] run playsound minecraft:block.anvil.place ambient @a[distance=0..10]
-execute at @s[scores={Wand=1..}] run particle minecraft:dust 0.75 0 0 1 ^ ^1 ^1 0.25 0.5 0.25 0.1 10 normal
-execute as @s[scores={Wand=1..}] run scoreboard players remove @s ed_mana 5
-execute as @s[scores={Wand=1..}] run scoreboard players reset @s Wand

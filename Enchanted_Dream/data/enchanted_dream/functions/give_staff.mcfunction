@@ -1,1 +1,0 @@
-give @p minecraft:carrot_on_a_stick{Unbreakable:1,CustomModelData:1,display:{Name:'[{"text":"C","bold":true,"italic":true,"color":"#0000ff"},{"text":"a","color":"#0033ff"},{"text":"t","color":"#0066ff"},{"text":"al","color":"#0099ff"},{"text":"y","color":"#0066ff"},{"text":"s","color":"#0033ff"},{"text":"t"}]'}} 1

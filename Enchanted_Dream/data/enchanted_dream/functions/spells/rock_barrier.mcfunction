@@ -1,8 +1,0 @@
-title @s actionbar ["",{"text":"x","obfuscated":true,"color":"#007EFA"},{"text":"[","bold":true,"color":"gray"},{"score":{"name":"@s","objective":"ed_mana"},"bold":true,"color":"aqua"},{"text":"/","bold":true},{"score":{"name":"@s","objective":"ed_mana_cap"},"bold":true,"color":"aqua"},{"text":"]","bold":true,"color":"gray"},{"text":"-","bold":true},{"text":"[","bold":true,"color":"gray"},{"text":"x","obfuscated":true,"color":"#663500"},{"text":"-","bold":true,"color":"gray"},{"text":"R","color":"#482600"},{"text":"o","color":"#432200"},{"text":"c","color":"#4A160E"},{"text":"k ","color":"#4E211D"},{"text":"B","color":"#57322C"},{"text":"a","color":"#5C413A"},{"text":"r","color":"#57322C"},{"text":"r","color":"#4E211D"},{"text":"i","color":"#4A160E"},{"text":"e","color":"#432200"},{"text":"r","color":"#482600"},{"text":"-","bold":true,"color":"gray"},{"text":"x","obfuscated":true,"color":"#663500"},{"text":"]","bold":true,"color":"gray"}]
-execute as @s[scores={Wand=1..}] at @s run summon armor_stand ^ ^1 ^2 {Tags:["ed_ray","ed_rock_barrier_ray"],Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Small:1b}
-execute at @s[scores={Wand=1..}] run execute as @e[tag=ed_rock_barrier_ray,limit=1,sort=nearest] at @p run tp @s ^ ^1 ^1 ~ ~
-execute as @s[scores={Wand=1..}] at @s run particle minecraft:block minecraft:dirt ^ ^1 ^2 0.1 0.1 0.1 0.1 20
-execute as @s[scores={Wand=1..}] at @s run particle minecraft:block minecraft:stone ^ ^1 ^2 0.1 0.1 0.1 0.1 10
-execute as @s[scores={Wand=1..}] at @s run playsound minecraft:block.stone.break master @a[distance=0..10] ~ ~ ~ 1 1
-execute as @s[scores={Wand=1..}] run scoreboard players remove @s ed_mana 5
-execute as @s[scores={Wand=1..}] run scoreboard players reset @s Wand
