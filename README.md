@@ -1,7 +1,7 @@
 # Enchanted-Dream
 A datapack I'm developping, which adds a ton of magic to the game
 
-Planned release date : December 25<sup>th</sup> 2022
+# Planned release date : December 25<sup>th</sup> 2022
 
 Currently in Alpha 1.0, with new spells, mechanics and staffs
 
