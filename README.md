@@ -37,4 +37,4 @@ Also, try to fuck me over this repo and I'll come after you with full intent to 
 
 
 
-By using this datapack you agree to surrender your soul and all your physical and intellectual properties if asked for it by me, alongside the blood of your firstborn obtained under a red moon, and not to forget, you surrender your free will to me. Thank you ^.^
+<sup>By using this datapack you agree to surrender your soul and all your physical and intellectual properties if asked for it by me, alongside the blood of your firstborn obtained under a red moon, and not to forget, you surrender your free will to me. Thank you ^.^</sup>
